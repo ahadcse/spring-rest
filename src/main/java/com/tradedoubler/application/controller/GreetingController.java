@@ -15,6 +15,7 @@ import static com.tradedoubler.application.constant.ControllerConstant.GREETING;
  */
 
 /**
+ * TODO Add configuration
  * TODO Change default port
  * TODO Add properties file
  * TODO need to add unit test
@@ -33,8 +34,8 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping(value = GREETING, method = RequestMethod.GET)
     // Ensures that HTTP requests to /greeting are mapped to the greeting() method.
+    @RequestMapping(value = GREETING, method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "Developer") String name,
                              @RequestParam(value = "greetingText", defaultValue = "Welcome") String greetingText) {
