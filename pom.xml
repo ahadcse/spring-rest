@@ -21,6 +21,10 @@
         <junit.version>4.11</junit.version>
         <!-- Spring Boot -->
         <spring-boot.version>1.0.2.RELEASE</spring-boot.version>
+        <!-- Json -->
+        <json.version>20140107</json.version>
+        <!-- Swagger -->
+        <swagger.version>0.8.4</swagger.version>
         <!-- Main class -->
         <start-class>com.tradedoubler.application.Application</start-class>
         <!-- Encoding -->
@@ -37,6 +41,16 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mangofactory</groupId>
+            <artifactId>swagger-springmvc</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
     </dependencies>
 
