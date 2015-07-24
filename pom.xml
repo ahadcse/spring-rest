@@ -25,6 +25,8 @@
         <json.version>20140107</json.version>
         <!-- Swagger -->
         <swagger.version>0.8.4</swagger.version>
+        <!-- JavaDoc -->
+        <javadoc.version>2.10.1</javadoc.version>
         <!-- Main class -->
         <start-class>com.tradedoubler.application.Application</start-class>
         <!-- Encoding -->
@@ -83,7 +85,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.1</version>
+                <version>${javadoc.version}</version>
             </plugin>
         </plugins>
     </build>
