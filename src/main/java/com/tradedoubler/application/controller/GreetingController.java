@@ -1,11 +1,10 @@
 package com.tradedoubler.application.controller;
 
 import com.tradedoubler.application.model.Greeting;
-
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 import static com.tradedoubler.application.constant.ControllerConstant.GREETING;
 
@@ -15,17 +14,13 @@ import static com.tradedoubler.application.constant.ControllerConstant.GREETING;
  */
 
 /**
- * TODO Add configuration
- * TODO Change default port
- * TODO Add properties file
  * TODO need to add unit test
- * TODO Add slf4j for logging  (See openplatform uts)
  * TODO Customize data format (See openplatform uts)
  * TODO Response code
+ * TODO Use websocket
  * TODO Error handling
- * TODO tokenize
- * TODO add mySQL DB
- * TODO Add Swaggar
+ * TODO tokenize. Configure token in properties file
+ * TODO add mySQL DB. Use spring in memeory database
  */
 
 @RestController

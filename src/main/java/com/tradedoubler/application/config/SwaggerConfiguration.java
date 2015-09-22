@@ -2,7 +2,6 @@ package com.tradedoubler.application.config;
 
 
 import com.mangofactory.swagger.configuration.SpringSwaggerConfig;
-import com.mangofactory.swagger.plugin.EnableSwagger;
 import com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin;
 import com.wordnik.swagger.model.ApiInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +19,10 @@ public class SwaggerConfiguration {
     }
 
     @Bean
-    public SwaggerSpringMvcPlugin customImplementation(){
+    public SwaggerSpringMvcPlugin customImplementation() {
         return new SwaggerSpringMvcPlugin(this.springSwaggerConfig)
                 .apiInfo(apiInfo())
-                .includePatterns(".*greeting.*");
+                .includePatterns(".*/.*");
     }
 
     private ApiInfo apiInfo() {
@@ -36,6 +35,4 @@ public class SwaggerConfiguration {
                 null
         );
     }
-
-
 }
