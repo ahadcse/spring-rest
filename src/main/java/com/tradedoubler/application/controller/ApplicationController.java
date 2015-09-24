@@ -27,7 +27,6 @@ import static org.slf4j.LoggerFactory.getLogger;
  * TODO Login
  * TODO Add Rest documentation
  * TODO Collect log in a file
- * TODO Authentication, encrypt password(Check existing username and password rule)
  * TODO need to add unit test
  * TODO Customize data format (See openplatform uts)
  * TODO Response code
