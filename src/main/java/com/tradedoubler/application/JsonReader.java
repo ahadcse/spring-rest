@@ -19,7 +19,7 @@ public class JsonReader {
 
 
     public static void main(String[] args) throws IOException, JSONException {
-        // JSONObject json = readJsonFromUrl("http://localhost:9998/1.0/claimStatuses");
+        // JSONObject json = readJsonFromUrl("http://localhost:9998/1.0/status");
        //  System.out.println(json.toString());
     }
 }
