@@ -8,9 +8,7 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import scala.util.parsing.json.JSON;
 
-import javax.validation.Valid;
 import java.util.concurrent.atomic.AtomicLong;
 
 import static com.tradedoubler.application.constant.ControllerConstant.*;
@@ -56,8 +54,8 @@ public class ApplicationController {
 
     @RequestMapping(value = {REGISTER}, method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
-    public String register(@RequestParam(value = "user") @Valid String user,
-                                 @RequestParam(value = "password") @Valid String password) {
+    public String register(@RequestParam(value = "user") String user,
+                                 @RequestParam(value = "password") String password) {
         JSONObject jsonObject = new JSONObject();
         LOGGER.info("register controller executed...");
         Registration registration = new Registration();
