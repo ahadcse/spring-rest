@@ -8,4 +8,6 @@ public interface ControllerConstant {
     public final static String GREETING = "/greeting";
     public final static String REGISTER = "/register";
     public final static String LIST_USER = "/listuser";
+    public final static String ERROR_CODE = "/errorcode";
+    public final static String ERROR = "/error";
 }
